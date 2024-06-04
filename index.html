@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Lucas Dal Cortivo | KZUE IMÓVEIS</title>
+</head>
+
+<body>
+  <div class="content-wrapper">
+
+    <form action="" name="contato" id="contato">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" required>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required>
+      <label for="telefone">Telefone</label>
+      <input type="tel" name="telefone" id="telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="00-00000-0000">
+      <textarea name="mensagem" id="mensagem" placeholder="Como posso ajudar?" required></textarea>
+      <button type="submit">ENVIAR</button>
+    </form>
+    <div class="image">
+      <img src="./assets/img/lucas.jpg" alt="Foto corretor">
+    </div>
+  </div>
+</body>
+
+</html>
