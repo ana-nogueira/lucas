@@ -1,5 +1,7 @@
 body {
   background-image: url(./assets/img/background.png);
+  font-family: "Readex Pro", sans-serif;
+
   margin: 0 auto;
   height: 100vh;
   display: flex;
@@ -7,13 +9,25 @@ body {
   align-items: center;
 }
 
+h1,
+h2,
+h3,
+h4,
+span,
+a {
+  padding: 0;
+  margin: 0;
+}
+
 img {
   width: 100%;
 }
 
 .content-wrapper {
-  display: flex;
-  gap: 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   max-width: 800px;
   background-color: rgba(255, 255, 255, 0.822);
   border-radius: 10px;
@@ -23,4 +37,47 @@ img {
 
 .image img {
   border-radius: 10px;
+  box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.241);
+}
+
+.image {
+  z-index: 100;
+}
+
+.title-content {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 0px 15px 10px;
+  background-color: #c4bab7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+label {
+  font-size: 0.8rem;
+  color: #474747;
+  margin-bottom: 5px;
+}
+
+input {
+  border: none;
+  border-bottom: solid 1px #c4bab7;
+  margin-bottom: 15px;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  border: solid 1px #c4bab7;
+  margin-bottom: 15px;
 }
